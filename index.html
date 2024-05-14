@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a basic HTML working form that can submit">
+    <meta name="keywords" content="Basic HTML, HTML form, Working form, HTML Submit form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working Form by Gloria Ngbea |</title>
+</head>
+<body>
+   <form target="_blank" 
+   action="https://formsubmit.co/gloriangbeajames@gmail.com" 
+   method="POST">
+   <div class="fullname">
+    <input type="text" name="Full name" placeholder="Full Name" required >
+   </div>
+   <div class="email">
+    <input type="email" name="email" placeholder="Email" required>
+   </div> 
+   <div class="textarea">
+    <textarea type="text" name="message"  placeholder="type yor message here"></textarea>
+   </div>
+   <!--Code to get rid of the capcha (completely automated public turing test to tell human and computers apart)-->
+   <input type="hidden" name="_captcha" value="false">
+   <!--Redirecting the form to a thank you page afterit has been submitted-->
+   <input type="hidden" name="_next" value="https://html-working-form-gloria-ngbea-james.netlify.app/thanks.html">
+
+   <!--Make sure to put the value attribute and give it a submit if not the inout submit will be displayed as submit query in the dom-->
+   <div class="submit">
+    <input type="submit" value="submit">
+   </div>
+
+   </form> 
+</body>
+</html>
